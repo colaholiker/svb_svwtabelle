@@ -31,6 +31,7 @@
     },
     "extra": {
         "typo3/cms": {
+	    "extension-key": "svb_svwtabelle",
             "cms-package-dir": "{$SchachvereinBalingen-dir}/typo3/cms",
             "web-dir": ".Build/public",
             "extension-svb_schachturniere": "svb_schachturniere"
