@@ -1,0 +1,49 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-8.7.99\n",
+            "disableLocalization": true,
+            "disableVersioning": true,
+            "skipGenerateDocumentationTemplate": true,
+            "sourceLanguage": "de",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "svb_svwtabelle",
+        "name": "svwtabelle",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Schachverein Balingen e.V.",
+                "email": "sebastian.during@svbalingen.de",
+                "name": "Sebastian During",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "viewtabelle=>view",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "viewtabelle",
+                "name": "viewtabelle"
+            }
+        ],
+        "vendorName": "SchachvereinBalingen"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-08-28 02:44",
+        "extension_builder_version": "7.6.18",
+        "be_user": "Sebastian During (2)"
+    }
+}
