@@ -24,7 +24,7 @@ class viewtabelleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 	 */
 	public function viewAction()
 	{
-		$target = 'http://ergebnisse.svw.info/show/'.intval($this->settings['year']).'/'.intval($this->settings['turnier_id']);
+		$target = 'https://ergebnisse.svw.info/show/'.intval($this->settings['year']).'/'.intval($this->settings['turnier_id']);
 
 		// Test, ob die Tabelle ausgelesen werden kann
 		if (is_resource(@fopen($target.'/tabelle/plain','r'))) {
