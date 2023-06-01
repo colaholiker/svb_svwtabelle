@@ -6,10 +6,10 @@ call_user_func(
 	{
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'SchachvereinBalingen.SvbSvwtabelle',
+            'SvbSvwtabelle',
             'Viewtabelle',
             [
-                'viewtabelle' => 'view'
+                \SchachvereinBalingen\SvbSvwtabelle\Controller\viewtabelleController::class => 'view'
             ],
             // non-cacheable actions
             [
@@ -37,5 +37,5 @@ call_user_func(
 	   }'
 	);
     },
-    $_EXTKEY
+   'svb_svwtabelle' 
 );
