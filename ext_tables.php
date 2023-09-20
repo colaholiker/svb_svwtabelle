@@ -5,11 +5,5 @@ call_user_func(
     static function()
     {
 
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'SchachvereinBalingen.SvbSvwtabelle',
-            'Viewtabelle',
-            'viewtabelle'
-        );
-
     },
 );
