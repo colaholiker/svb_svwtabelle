@@ -44,6 +44,8 @@ class viewtabelleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 		#print_r($output);die();
 
 		$this->view->assign('output', $output);
+
+		return $this->htmlResponse();
 	}
 
 }
