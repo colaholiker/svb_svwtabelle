@@ -24,7 +24,7 @@ class viewtabelleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 	 */
 	public function viewAction()
 	{
-		$target = 'https://ergebnisse.svw.info/show/'.intval($this->settings['year']).'/'.intval($this->settings['turnier_id']);
+		$target = 'https://svw.svbalingen.de/ergebnisse.svw.info/show/'.intval($this->settings['year']).'/'.intval($this->settings['turnier_id']);
 
 		// Test, ob die Tabelle ausgelesen werden kann
 		if (is_resource(@fopen($target.'/tabelle/plain','r'))) {
@@ -34,7 +34,7 @@ class viewtabelleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 			$output = '<p>die Tabelle konnte nicht eingelesen werden! ('.$target.')</p>'; 
 		}
 
-		$output .= '<p class="quelle">Quelle: <a href="'.$target.'" target="_blank" class="external-link-new-window">svw.info</a></p>';
+		$output .= '<p class="quelle">Quelle: <a href="'.$target.'" target="_blank" class="external-link-new-window">svw.svbalingen.de (old svw.info)</a></p>';
 
 		$output = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $output);
 		$output = preg_replace("#\t+#", " ", $output); 
