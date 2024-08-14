@@ -7,7 +7,7 @@ call_user_func(
 	{
 
 		\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-			'SchachvereinBalingen.SvbSvwtabelle',
+			'SvbSvwtabelle',
 			'Viewtabelle',
 			'viewtabelle'
 		);
