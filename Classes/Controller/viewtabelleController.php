@@ -34,12 +34,14 @@ class viewtabelleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 			$output = '<p>die Tabelle konnte nicht eingelesen werden! ('.$target.')</p>'; 
 		}
 
-		$output .= '<p class="quelle">Quelle: <a href="'.$target.'" target="_blank" class="external-link-new-window">svw.info</a></p>';
+		#$output .= '<p class="quelle">Quelle: <a href="'.$target.'" target="_blank" class="external-link-new-window">svw.info</a></p>';
 
 		$output = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $output);
 		$output = preg_replace("#\t+#", " ", $output); 
 		$output = preg_replace("#[ ]{2,}#", " ", $output);
 		$output = preg_replace("#[\r\n]{2,}#", "\r\n", $output);
+
+		$output = strip_tags($output, '<h2><table><colgroup><thead><tr><th><abbr><tbody><td>');
 
 		#print_r($output);die();
 
