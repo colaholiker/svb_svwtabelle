@@ -41,7 +41,7 @@ class viewtabelleController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
 		$output = preg_replace("#[ ]{2,}#", " ", $output);
 		$output = preg_replace("#[\r\n]{2,}#", "\r\n", $output);
 
-		$output = strip_tags($output, '<h2><table><colgroup><thead><tr><th><abbr><tbody><td>');
+		$output = strip_tags($output, '<h2><table><colgroup><thead><tr><th><abbr><tbody><td><span>');
 
 		#print_r($output);die();
 
